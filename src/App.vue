@@ -9,8 +9,7 @@
 
     <!-- <v-spacer></v-spacer> -->
 
-    <!-- <v-main style="padding-left: 5em; padding-right: 5em"> -->
-    <v-main>
+    <v-main style="padding-left: 1em; padding-right: 1em">
       <Search />
       <v-spacer></v-spacer>
       <Table />
