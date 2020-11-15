@@ -1,28 +1,39 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-app-bar app>
+      <div class="d-flex align-center">
+        <span color="blue">Homie</span>
+        <span class="font-weight-light">Demo</span>
+      </div>
+    </v-app-bar>
+
+    <!-- <v-spacer></v-spacer> -->
+
+    <v-main style="padding-left: 2em; padding-right: 2em">
+      <Search />
+      <v-spacer></v-spacer>
+      <Table />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Table from "./components/Table";
+import Search from "./components/Search";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+  name: "App",
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {
+    Table,
+    Search,
+  },
+
+  data: () => ({
+    //
+  }),
+  mounted: () => {
+    console.log(process.env.VUE_APP_KEY);
+  },
+};
+</script>
