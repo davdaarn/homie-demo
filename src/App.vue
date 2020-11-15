@@ -10,7 +10,7 @@
     <!-- <v-spacer></v-spacer> -->
 
     <!-- <v-main style="padding-left: 5em; padding-right: 5em"> -->
-    <v-main style="padding-left: 5em; padding-right: 5em">
+    <v-main>
       <Search />
       <v-spacer></v-spacer>
       <Table />
