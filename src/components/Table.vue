@@ -60,7 +60,7 @@ export default {
         { text: "Address", value: "address.line", sortable: false },
         { text: "Listing", value: "rdc_web_url" },
         {
-          text: "Traditional Realator Fee",
+          text: "Traditional Realtor Fee",
           value: "traditionalFee",
           sortable: true,
           align: "end",
