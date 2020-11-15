@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app>
+    <v-app-bar app class="teal accent-1">
       <div class="d-flex align-center">
         <span color="blue">Homie</span>
         <span class="font-weight-light">Demo</span>
@@ -9,7 +9,7 @@
 
     <!-- <v-spacer></v-spacer> -->
 
-    <v-main style="padding-left: 2em; padding-right: 2em">
+    <v-main style="padding-left: 5em; padding-right: 5em">
       <Search />
       <v-spacer></v-spacer>
       <Table />

@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div style="margin-top: 40px">
     <div>
       <!-- <button @click="setProperties">Run</button> -->
       <v-form ref="form" v-model="valid" lazy-validation>
         <v-text-field
           v-model="city"
-          :counter="30"
+          :counter="20"
           :rules="cityRules"
           label="City"
           required
@@ -19,8 +19,13 @@
           required
         ></v-select>
 
-        <v-btn :disabled="!valid" color="success" class="mr-4" @click="submit">
-          Submmit
+        <v-btn
+          :disabled="!valid"
+          color="teal accent-1"
+          class="mr-4"
+          @click="submit"
+        >
+          Search Homes For Sale
         </v-btn>
 
         <span v-if="!resultsFound">
@@ -43,7 +48,7 @@ export default {
     city: "",
     cityRules: [
       (v) => !!v || "City is required",
-      (v) => (v && v.length <= 30) || "City must be less than 30 characters",
+      (v) => (v && v.length <= 20) || "City must be less than 30 characters",
     ],
     select: null,
     items: ["UT", "AZ"],

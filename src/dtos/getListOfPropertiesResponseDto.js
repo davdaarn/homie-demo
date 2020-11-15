@@ -15,11 +15,13 @@ export class PropertyDto {
 
   traditionalFee;
   potentialSavings;
+  price
 
   constructor(data) {
     Object.assign(this, data);
 
     this.traditionalFee = `$ ${(data.price * 0.06).toFixed(2)}`;
     this.potentialSavings = `$ ${(data.price * 0.06 - 3500).toFixed(2)}`;
+    this.price = `$ ${(data.price).toFixed(2)}`;
   }
 }
