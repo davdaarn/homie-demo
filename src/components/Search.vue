@@ -48,7 +48,7 @@ export default {
     city: "",
     cityRules: [
       (v) => !!v || "City is required",
-      (v) => (v && v.length <= 20) || "City must be less than 30 characters",
+      (v) => (v && v.length <= 20) || "City must be less than 20 characters",
     ],
     select: null,
     items: ["UT", "AZ"],
